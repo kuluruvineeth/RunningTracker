@@ -1,8 +1,9 @@
-package com.kuluruvineeth.runningtracker
+package com.kuluruvineeth.runningtracker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.kuluruvineeth.runningtracker.R
 import com.kuluruvineeth.runningtracker.db.RunDAO
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
