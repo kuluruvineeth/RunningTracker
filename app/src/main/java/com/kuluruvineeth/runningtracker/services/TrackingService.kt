@@ -4,8 +4,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.NotificationManager.IMPORTANCE_LOW
 import android.app.PendingIntent
-import android.app.PendingIntent.FLAG_MUTABLE
-import android.app.PendingIntent.FLAG_UPDATE_CURRENT
+import android.app.PendingIntent.*
 import android.content.Context
 import android.content.Intent
 import android.location.Location
@@ -150,12 +149,12 @@ class TrackingService : LifecycleService() {
             val pauseIntent = Intent(this,TrackingService::class.java).apply {
                 action = ACTION_PAUSE_SERVICE
             }
-            PendingIntent.getService(this,1,pauseIntent, FLAG_UPDATE_CURRENT)
+            PendingIntent.getService(this,1,pauseIntent, FLAG_UPDATE_CURRENT or FLAG_MUTABLE)
         }else{
             val resumeIntent = Intent(this,TrackingService::class.java).apply {
                 action = ACTION_START_OR_RESUME_SERVICE
             }
-            PendingIntent.getService(this,2,resumeIntent, FLAG_UPDATE_CURRENT)
+            PendingIntent.getService(this,2,resumeIntent, FLAG_UPDATE_CURRENT or FLAG_MUTABLE)
         }
 
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
