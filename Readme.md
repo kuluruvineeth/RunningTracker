@@ -29,3 +29,29 @@ Runs List | Stats | Individual Run stats |  |
 
 
 
+## Architecture 🗼
+This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture.
+
+![](https://github.com/kuluruvineeth/MVVMNews/blob/master/screenshots/architecture.png)
+
+## Build-tool 🧰
+You need to have [Android Studio](https://developer.android.com/studio/preview) to build this project.
+<br>
+<img src="https://github.com/kuluruvineeth/MVVMNews/blob/master/screenshots/android.png" height="200" alt="android-studio"/>
+
+<br>
+
+## Contribute 🤝
+If you want to contribute to this app, you're always welcome!
+
+## Contact 📩
+Have an project? DM me at 👇
+
+Drop a mail to:- kuluruvineeth8623@gmail.com
+
+<br>
+
+Thank You 🙏👏
+
+
+
