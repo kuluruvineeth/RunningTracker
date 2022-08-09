@@ -1,4 +1,6 @@
 # Running Tracking 🏃‍♂️
+![](https://img.shields.io/badge/RunningTracking-android-green)
+
 A Health Conscious running tracker app 📱 built leveraging the use of modern android architecture component with MVVM Architecture 🏗. *Made with love ❤️ by [KuluruVineeth](https://github.com/kuluruvineeth)*
 
 <br />
