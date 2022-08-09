@@ -27,6 +27,44 @@ Runs List | Stats | Individual Run stats |  |
 - [Google maps SDK for android](https://developers.google.com/maps/documentation/android-sdk/overview) - adding maps to android app using google maps data, map displays and map gesture responses.
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful and easy to use chart library
 
+## Package Structure 📦
+
+    com.kuluruvineeth.mvvmnews    # Root Package
+    ├── adapters                  # Adapter for RecyclerView 
+    ├── db                        # For db handling
+    |   ├── RunDao                # Data Access Object for Run
+    |   ├── RunningDatabase       # Running Database Instance
+    |   ├── Converters            # Type Converters
+    |   ├── Run                   # Run data class
+    |
+    ├── di                        # Dependency Injection
+    │   ├── AppModule              
+    │   ├── ServiceModule          
+    ├── other                     # Utility classes
+    │   ├── Constants             
+    │   ├── CustomMarkerView         
+    │   ├── SortType
+    |   ├── TrackingUtility
+    |
+    ├── repository                # Used to handle all data operations
+    │   ├── MainRepository        # MainRepository class
+    ├── services                  # Foreground and Background service 
+    |   ├── TrackingService
+    |
+    ├── ui                        # Used to handle all view layer
+    │   ├── fragments             # All fragments
+    │       ├── RunFragment            
+    │       ├── SettingsFragment      
+    │       ├── SetupFragment
+    |       ├── StatisticsFragment
+    |       ├── TrackingFragment
+    |       ├── CancelTrackingDialog
+    |   ├── viewmodels                     # View Model classes
+    │       ├── MainViewModel             
+    │       ├── StatisticsViewModel  
+    │   ├── MainActivity            # main activity
+    |
+    |── BaseApplication 
 
 
 ## Architecture 🗼
